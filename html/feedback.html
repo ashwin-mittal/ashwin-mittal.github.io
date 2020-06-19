@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Ashwin Mittal</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../css/carousel.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="d-flex h-100 w-100 flex-column">
+            <header>
+                <nav class="navbar navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="index.html">&#128578 Ashwin Mittal &#128578</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback.html">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <main role="main">
+                <div class="container text-center">
+                    <img src="https://www.newbreedmarketing.com/hs-fs/hubfs/shutterstock_695711272.jpg?width=2501&name=shutterstock_695711272.jpg"
+                        class="img-fluid rounded mx-auto d-block" alt="Generic placeholder image">
+                </div>
+                
+                <div class="container pt-3">
+                    <form onsubmit="tableMake()">
+                        <div id="pageContent" class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label class="font-weight-bold">Name</label><input class="form-control" id="name" type="text"
+                                    placeholder="Name" required="required" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label class="font-weight-bold">Skill</label><input class="form-control" id="skill" type="text"
+                                    placeholder="Skill" required="required" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Level</label>
+                            <select class="form-control" id="level">
+                                <option>Proficient</option>
+                                <option>Intermediate</option>
+                                <option>Beginner</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label class="font-weight-bold">Comment</label><textarea class="form-control" id="comment"
+                                    rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton"
+                                type="submit">Send</button></div>
+                    </form>
+                    <br />
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Skill</th>
+                                    <th scope="col">Level</th>
+                                    <th scope="col">Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableInit">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <footer class="mt-auto footer">
+                <div class="container">
+                    <p>This website is &copy; Ashwin Mittal, 2020.</p>
+                    <p>For any query <a href="https://www.google.com/" target="_blank" rel="noopener">Visit here</a> or my
+                        institute <a href="https://www.iiit.ac.in/" target="_blank" rel="noopener">IIIT Hyderabad</a> website.
+                    </p>
+                    <a href="https://twitter.com/explore" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/people/Ashwin-Mittal/100009758615680" target="_blank" rel="noopener"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/ashwin-mittal/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.skype.com/en/" target="_blank" rel="noopener"><i class="fab fa-skype"></i></a>
+                    <a href="mailto:ashwin.mittal2553@gmail.com" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
+                </div>
+            </footer>
+            <div class="scroll-to-top position-fixed">
+                <a class="d-block text-center text-white rounded" href="#"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/feedback.js"></script>
+        <script src="../js/scroll.js"></script>
+    </body>
+
+</html>

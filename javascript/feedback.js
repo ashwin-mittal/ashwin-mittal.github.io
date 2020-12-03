@@ -1,7 +1,5 @@
 const content = document.querySelector('#tableInit');
-
 let num = 0;
-
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('name') !== null) {
         const prevName = localStorage.getItem('name').split('#');
@@ -13,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     num++;
 });
-
-function tableMake() {
+function tableMaker() {
     const name = document.querySelector('#name');
     const skill = document.querySelector('#skill');
     const level = document.querySelector('#level');

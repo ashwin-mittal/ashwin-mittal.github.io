@@ -2,25 +2,26 @@ body {
     padding-top: 5rem;
 }
 
-.template {
+.text {
     padding: 3rem 1.5rem;
     text-align: center;
 }
 
-.pic{
+.pic {
     width: 60%;
 }
 
-.wrapper{
+.wrapper {
     text-align: center;
 }
 
-.wrapper-content{
+.wrapper-content {
     text-align: center;
     background-color: #F0F0F2;
     width: 100%;
 }
-.home-card{
+
+.home-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     display: inline-block;
@@ -32,13 +33,14 @@ body {
     font-size: 1.8vh;
 }
 
-.card-content{
+.card-content {
     width: 50%;
 }
 
-.left-cards{
+.left-cards {
     text-align: left;
 }
-.right-cards{
+
+.right-cards {
     text-align: right;
 }

@@ -14,18 +14,56 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
-    <script src="../javascript/loader.js"></script>
+    <!-- <script src="../javascript/loader.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             load_page('header');
             load_page('footer');
         });
-    </script>
+    </script> -->
 </head>
 
 <body>
     <div class="d-flex h-100 w-100 flex-column">
         <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="index.htm">&#128578 {Ashwin Mittal} &#128578</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.htm"><i class="fa fa-home" aria-hidden="true"></i>Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-trigger" href="index.htm#about"><i class="fa fa-info-circle"
+                                    aria-hidden="true"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.htm"><i class="fa fa-book"
+                                    aria-hidden="true"></i>Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.htm"><i class="fa fa-pencil-square"
+                                    aria-hidden="true"></i>Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="draw.htm"><i class="fa fa-paint-brush"
+                                    aria-hidden="true"></i>Draw</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forum.htm"><i class="fa fa-flash" aria-hidden="true"></i>Forum</a>
+                        </li>
+                    </ul>
+                    <div class="custom-control custom-switch dark-button-color">
+                        <input type="checkbox" class="custom-control-input" id="darkSwitch" onchange="darkmode()">
+                        <label class="custom-control-label" for="darkSwitch">Dark theme</label>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main role="main">
             <div class="container text-center">
@@ -83,6 +121,24 @@
             </div>
         </main>
         <footer class="mt-auto footer">
+            <div class="container">
+                <p>Made with &#10084; by Ashwin Mittal</p>
+                <p>For any query <a href="https://www.google.com/" target="_blank" rel="noopener">visit here</a> or my
+                    institute <a href="https://www.iiit.ac.in/" target="_blank" rel="noopener">IIIT Hyderabad</a>
+                    website.
+                </p>
+                <a href="https://twitter.com/explore" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/people/Ashwin-Mittal/100009758615680" target="_blank"
+                    rel="noopener"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://github.com/ashwin-mittal/" target="_blank" rel="noopener"><i
+                        class="fa fa-github"></i></a>
+                <a href="https://www.skype.com/en/" target="_blank" rel="noopener"><i class="fa fa-skype"></i></a>
+                <a href="mailto:ashwin.mittal2553@gmail.com" target="_blank" rel="noopener"><i
+                        class="fa fa-globe"></i></a>
+            </div>
+            <div class="scroll-to-top position-fixed">
+                <a class="d-block text-center text-white rounded" href="#"><i class="fa fa-chevron-up"></i></a>
+            </div>
         </footer>
     </div>
     <div class="scroll-to-top position-fixed">

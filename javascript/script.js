@@ -26,7 +26,7 @@ $('.scroll-trigger').click(function () {
 function darkmode() {
     if (document.getElementById('darkSwitch').checked == true) {
         var element = document.body;
-        element.classList.toggle("dark-mode");
+        element.classList.toggle("dark-mode", true);
         if (document.querySelector('.jumbotron') != null)
             document.querySelector('.jumbotron').style.backgroundColor = '#1e2125';
         if (document.querySelector('.footer') != null)
@@ -34,7 +34,7 @@ function darkmode() {
         if (document.querySelector('.wrapper-content') != null)
             document.querySelector('.wrapper-content').style.backgroundColor = '#0F0F0F'
         if (document.querySelector('.home-card') != null)
-            document.querySelector('.home-card').style.backgroundColor = '#1e2125';
+            document.querySelectorAll('.home-card').forEach(element => element.style.backgroundColor = '#1e2125');
     }
     else {
         var element = document.body;
@@ -46,6 +46,6 @@ function darkmode() {
         if (document.querySelector('.wrapper-content') != null)
             document.querySelector('.wrapper-content').style.backgroundColor = '#F0F0F2'
         if (document.querySelector('.home-card') != null)
-            document.querySelector('.home-card').style.backgroundColor = '#F0F0F2';
+            document.querySelectorAll('.home-card').forEach(element => element.style.backgroundColor = '#F0F0F2');
     }
 }

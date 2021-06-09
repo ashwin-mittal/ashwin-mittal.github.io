@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <style>
-        .container {
-            text-align: center;
-        }
+      .container {
+        text-align: center;
+      }
     </style>
     <script src="../js/draw.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>{Draw}</h1>
-        <div id="options" class="row d-flex justify-content-around">
-            <div>
-                <i class="fa fa-pencil"></i>
-                <select id="color-picker">
-                    <option value="black">Black</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                </select>
-            </div>
-            <div>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <select id="thickness-picker">
-                    <option value=1>1</option>
-                    <option value=2>2</option>
-                    <option value=3 selected>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5</option>
-                    <option value=6>6</option>
-                    <option value=7>7</option>
-                    <option value=8>8</option>
-                    <option value=9>9</option>
-                    <option value=10>10</option>
-                </select>
-            </div>
-            <button id="erase"><i class="fa fa-eraser" aria-hidden="true"></i>Erase</button>
+      <h1>{Draw}</h1>
+      <div id="options" class="row d-flex justify-content-around">
+        <div>
+          <i class="fa fa-pencil"></i>
+          <select id="color-picker">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
         </div>
+        <div>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <select id="thickness-picker">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <button id="erase">
+          <i class="fa fa-eraser" aria-hidden="true"></i>Erase
+        </button>
+      </div>
     </div>
-    <svg id="draw">
-    </svg>
-</body>
-
+    <svg id="draw"></svg>
+  </body>
 </html>

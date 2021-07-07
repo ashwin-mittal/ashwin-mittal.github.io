@@ -114,6 +114,10 @@ body {
   margin-bottom: 0;
 }
 
+.footer p a br {
+  display: none;
+}
+
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;

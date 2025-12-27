@@ -41,6 +41,7 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
+  border-radius: 15px;
 }
 
 .jumbotron {
@@ -50,6 +51,8 @@ body {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .marketing h2 {
@@ -138,8 +141,8 @@ body {
 }
 
 .white-mode {
-  background-color: red;
-  color: white;
+  background-color: #f0f0f2;
+  color: #5a5a5a;
 }
 
 .dark-button-color {
@@ -160,5 +163,20 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 20rem;
+  }
+  .carousel-item > img {
+    height: 20rem;
+  }
+  .jumbotron h4 {
+    font-size: 1.2rem;
+  }
+  .marketing h1 {
+    font-size: 1.5rem;
   }
 }
